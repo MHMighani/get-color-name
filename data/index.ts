@@ -1,9 +1,6 @@
-type Color = {
-  name: string;
-  hex: string;
-};
+import { Color } from '../types';
 
-export const colors: Color[] = [
+export const persianColors: Color[] = [
   {
     name: 'جگری',
     hex: 'CD5C5C',
