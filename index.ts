@@ -14,5 +14,5 @@ export const getColorName = (color: string, lang = 'fa') => {
 
   const index = deltas.indexOf(min);
 
-  return colors[index];
+  return colors[index]?.name;
 };
