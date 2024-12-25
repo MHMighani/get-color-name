@@ -7,7 +7,7 @@ const colorsByLang: ColorByLang = {
   en: englishColors,
 };
 
-export const getColorName = (color: string, lang = 'fa') => {
+export const getColorName = (color: string, lang = 'en') => {
   const colors = colorsByLang[lang] || [];
 
   const deltas = colors.map((c) => chroma.deltaE(color, c.hex));
@@ -17,3 +17,5 @@ export const getColorName = (color: string, lang = 'fa') => {
 
   return colors[index]?.name;
 };
+
+console.log(getColorName('#841474'));

@@ -1,12 +1,16 @@
 {
   "name": "get-color-name",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A package for getting color name in different languages",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "ts-node ./index.ts"
+    "start": "ts-node ./src/index.ts"
   },
+  "keyword": [
+    "color",
+    "color name"
+  ],
   "author": "Mohammad Hossein Mighani",
   "license": "ISC",
   "devDependencies": {
@@ -19,6 +23,7 @@
     "prettier": "^3.4.2",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.1"
   },
