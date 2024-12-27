@@ -1,8 +1,10 @@
 {
   "name": "find-color-name",
-  "version": "0.0.1",
+  "version": "0.0.23",
   "description": "A package for getting color name in different languages",
-  "main": "./src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup ./src/index.ts",
     "test": "jest",
