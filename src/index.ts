@@ -18,4 +18,10 @@ export const getColorName = (color: string, lang = 'en') => {
   return colors[index]?.name;
 };
 
-console.log(getColorName('#841474'));
+export const getColorCode = (name: string, lang = 'en', format = 'hex') => {
+  const colors = colorsByLang[lang];
+
+  const color = colors.find((c) => c.name.toLowerCase() === name);
+
+  if (color) return chroma(color.hex).get(format);
+};
